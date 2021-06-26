@@ -11,6 +11,7 @@ const requiredFolders = [
     '.data',
     '.data/users',
     '.data/tokens',
+    '.data/cart',
 ];
 projectSetup.init(requiredFolders, (err) => {
     if (err) {
@@ -18,6 +19,7 @@ projectSetup.init(requiredFolders, (err) => {
         return false;
     }
 
+    projectSetup.cleanUp();
     app.init();
 });
 
