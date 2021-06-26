@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category": "pizza",
+        "name": "Korrida",
+        "price": 750,
+        "currency": "Eur",
+        "size": 35,
+        "size-units": "cm",
+        "composition": ["Branded Brothers Sauce", "Gouda Cheese", "Mozarella Cheese", "Red Onions", "Fresh Tomatoes", "Jamon Serrano Spanish Spicy Ham", "Green Olives with Anchovies", "Garlic Olive Seasoning", "Italian Spice Blend"]
+    },
+    {
+        "id": 2,
+        "category": "pizza",
+        "name": "Korrida",
+        "price": 900,
+        "currency": "Eur",
+        "size": 45,
+        "size-units": "cm",
+        "composition": ["Branded Brothers Sauce", "Gouda Cheese", "Mozarella Cheese", "Red Onions", "Fresh Tomatoes", "Jamon Serrano Spanish Spicy Ham", "Green Olives with Anchovies", "Garlic Olive Seasoning", "Italian Spice Blend"]
+    },
+    {
+        "id": 3,
+        "category": "pizza",
+        "name": "Bolonjeze",
+        "price": 700,
+        "currency": "Eur",
+        "size": 35,
+        "size-units": "cm",
+        "composition": ["Branded Brothers sauce", "Gouda cheese", "minced 'pork-beef'", "fresh tomatoes", "green pickled tomatoes", "Mozarella cheese", "Cheddar red cheese", "garlic olive seasoning", "a mixture of Italian spices"]
+    },
+    {
+        "id": 4,
+        "category": "pizza",
+        "name": "Bolonjeze",
+        "price": 900,
+        "currency": "Eur",
+        "size": 45,
+        "size-units": "cm",
+        "composition": ["Branded Brothers sauce", "Gouda cheese", "minced 'pork-beef'", "fresh tomatoes", "green pickled tomatoes", "Mozarella cheese", "Cheddar red cheese", "garlic olive seasoning", "a mixture of Italian spices"]
+    }
+]
