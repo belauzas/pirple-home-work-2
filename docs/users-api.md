@@ -24,7 +24,7 @@ Example request payload
 
 **Response:**
 
-- JSON object, representing response message
+- JSON, representing response message
 
 Example response payload
 
@@ -92,7 +92,7 @@ token: kj4sexzzmzkkqp7ots0p
 
 **Response:**
 
-- JSON object, representing response message
+- JSON, representing response message
 
 Example response payload
 
@@ -121,7 +121,7 @@ http://localhost:3000/users?email=info@mail.com
 
 **Response:**
 
-- JSON object, representing response message
+- JSON, representing response message
 
 Example response payload
 

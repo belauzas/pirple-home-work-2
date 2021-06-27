@@ -17,36 +17,35 @@ Example request payload
 {
   "email": "info@mail.com",
   "items": [
-    {
-      "id": 1,
-      "amount": 1
-    },
-    {
-      "id": 3,
-      "amount": 2
-    }
+    { "id": 1, "amount": 1 },
+    { "id": 3, "amount": 2 }
   ]
 }
 ```
 
 **Response:**
 
-- JSON object, representing response message
+- JSON, representing cart object
 
 Example response payload
 
 ```json
 {
-  "success": "User created"
+  "id": "pmgm77y65fbw9bj9tg6j",
+  "email": "info@mail.com",
+  "items": [
+    { "id": 1, "amount": 1 },
+    { "id": 3, "amount": 2 }
+  ]
 }
 ```
 
-## [GET] http://localhost:3000/cart?email={userEmail}
+## [GET] http://localhost:3000/cart?id={cartID}
 
 **Requires:**
 
 - authentication token in header
-- url param _email_
+- url param _id_
 
 Example request
 
@@ -55,21 +54,23 @@ Headers
 token: kj4sexzzmzkkqp7ots0p
 
 URL
-http://localhost:3000/cart?email=info@mail.com
+http://localhost:3000/cart?id=pmgm77y65fbw9bj9tg6j
 ```
 
 **Response:**
 
-- JSON, representing a user's object
+- JSON, representing a cart's object
 
 Example response payload
 
 ```json
 {
-  "firstName": "FirstName",
-  "lastName": "LastName",
+  "id": "pmgm77y65fbw9bj9tg6j",
   "email": "info@mail.com",
-  "tosAgreement": true
+  "items": [
+    { "id": 1, "amount": 1 },
+    { "id": 3, "amount": 2 }
+  ]
 }
 ```
 
@@ -78,7 +79,7 @@ Example response payload
 **Requires:**
 
 - authentication token in header
-- JSON payload, representing a user's object with a fields to update
+- JSON payload, representing a cart's object with a fields to update
 
 Example request payload
 
@@ -89,32 +90,39 @@ token: kj4sexzzmzkkqp7ots0p
 
 ```json
 {
-  "firstName": "FirstName",
-  "lastName": "LastName",
-  "email": "info@mail.com",
-  "password": "your_secret_password",
-  "tosAgreement": true
+  "id": "pmgm77y65fbw9bj9tg6j",
+  "items": [
+    { "id": 1, "amount": 2 },
+    { "id": 3, "amount": 2 },
+    { "id": 4, "amount": 1 }
+  ]
 }
 ```
 
 **Response:**
 
-- JSON object, representing response message
+- JSON, representing updated cart object
 
 Example response payload
 
 ```json
 {
-  "success": "User has been updated"
+  "id": "pmgm77y65fbw9bj9tg6j",
+  "email": "info@mail.com",
+  "items": [
+    { "id": 1, "amount": 2 },
+    { "id": 3, "amount": 2 },
+    { "id": 4, "amount": 1 }
+  ]
 }
 ```
 
-## [DELETE] http://localhost:3000/cart?email={userEmail}
+## [DELETE] http://localhost:3000/cart?id={cartID}
 
 **Requires:**
 
 - authentication token in header
-- url param _email_
+- url param _id_
 
 Example request
 
@@ -123,17 +131,17 @@ Headers
 token: kj4sexzzmzkkqp7ots0p
 
 URL
-http://localhost:3000/cart?email=info@mail.com
+http://localhost:3000/cart?id=pmgm77y65fbw9bj9tg6j
 ```
 
 **Response:**
 
-- JSON object, representing response message
+- JSON, representing response message
 
 Example response payload
 
 ```json
 {
-  "success": "User has been deleted"
+  "success": "Cart has been deleted"
 }
 ```

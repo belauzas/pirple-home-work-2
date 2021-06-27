@@ -21,7 +21,7 @@ Example request payload
 
 **Response:**
 
-- JSON object, representing authentication object with tokenID and expiration date
+- JSON, representing authentication object with tokenID and expiration date
 
 Example response payload
 
@@ -78,7 +78,7 @@ Example request payload
 
 **Response:**
 
-- JSON object, representing authentication object
+- JSON, representing authentication object
 
 Example response payload
 
@@ -106,7 +106,7 @@ http://localhost:3000/tokens?id=kj4sexzzmzkkqp7ots0p
 
 **Response:**
 
-- JSON object, representing response message
+- JSON, representing response message
 
 Example response payload
 
