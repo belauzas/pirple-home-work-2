@@ -6,6 +6,10 @@ environments.dev = {
     envName: 'dev',
     hashingSecret: 'development-random-hashing-secret-string',
     tokenExpirationPeriod: 3600000,
+    cart: {
+        maxItems: 8,
+        maxAmountPerItem: 5,
+    }
 }
 
 environments.production = {
@@ -14,6 +18,10 @@ environments.production = {
     envName: 'production',
     hashingSecret: 'production-random-hashing-secret-string',
     tokenExpirationPeriod: 3600000,
+    cart: {
+        maxItems: 8,
+        maxAmountPerItem: 5,
+    }
 }
 
 const currentEnv = typeof process.env.NODE_ENV === 'string' ? process.env.NODE_ENV.toLowerCase() : '';
